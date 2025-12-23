@@ -28,16 +28,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { B0, B1, B2, C7 }
-#define MATRIX_COL_PINS { F0, F1, F4, F5, F6, F7, C6, B6, B5, B4, D7, D6 }
+// #define MATRIX_ROW_PINS { B0, B1, B2, C7 }
+// #define MATRIX_COL_PINS { F0, F1, F4, F5, F6, F7, C6, B6, B5, B4, D7, D6 }
 
 /* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+// #define DIODE_DIRECTION COL2ROW
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
+// #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+// #define LOCKING_RESYNC_ENABLE
 
 /*
  * Feature disable options
@@ -54,3 +54,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
+#define TAPPING_TERM 185
+#define USB_SUSPEND_WAKEUP_DELAY 2000
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 1000U
+
+// Space saving options
+#define LAYER_STATE_8BIT
+#define NO_ACTION_ONESHOT
